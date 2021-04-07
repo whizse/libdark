@@ -20,7 +20,7 @@ CC=gcc
 CFLAGS=-shared -fPIC -Wall -std=gnu11
 #CFLAGS=-rdynamic -fPIC -shared -Wall -std=c99 -fvisibility=hidden -DHOOK_DLSYM
 LDFLAGS=-Wl,-z,relro,-z,now
-LDLIBS=-ldl -lrt -lX11
+LDLIBS=-ldl -lX11
 #-lX11
 prefix=/usr/local
 bindir=$(prefix)/bin
