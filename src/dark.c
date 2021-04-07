@@ -60,7 +60,7 @@ void init(void) {
 
 int XMapWindow(Display *dpy, Window w) {
   if (_XMapWindow == NULL ) {
-    void *handle = dlopen("libX11.so", RTLD_LAZY);
+    void *handle = dlopen("libX11.so.6", RTLD_LAZY);
     if (handle) {
       _XMapWindow = dlsym(handle, "XMapWindow");
       UTF8_STRING = XInternAtom(dpy, "UTF8_STRING", 0);
